@@ -55,7 +55,7 @@ nav a:hover {
     text-align: center;
 
     max-width: 740px;
-    margin: auto;
+    margin: 0 auto;
 
     padding: 100px 0;
 }
@@ -127,6 +127,7 @@ h2 {
     font-weight: 700;
     line-height: 7rem;
     letter-spacing: -0.1rem;
+    margin-bottom: 30px;
 }
 
 .medium-text {
@@ -137,10 +138,6 @@ h2 {
 }
 
 .content .label + h2 {
-    margin-top: 29px;
-}
-
-.content h2 + .medium-text {
     margin-top: 29px;
 }
 
@@ -177,7 +174,7 @@ h3 {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 60px;
+    gap: 100px;
     margin: 0;
     max-width: 100%;
     text-align: left;
@@ -209,5 +206,190 @@ h3 {
 
 .column-examples .label + .small-text {
     margin-top: 16px;
+}
+
+/* FORM */
+
+.form {
+    background-color: #2F1893;
+    background-image: url("./assets/img/features-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 80px;
+}
+
+.column-title {
+    max-width: 600px;
+}
+
+form {
+    background-color: white;
+}
+
+/* TESTIMONIAL */
+
+.testimonial {
+    background-color: #1E0E62;
+
+}
+
+.testimonial .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 40px;
+
+    max-width: 980px;   /* 470 + 470 + 40 (gap) = 980 */
+    margin: 0 auto;     /* centra el bloque */
+}
+
+.testimonial-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;;
+    width: 470px;
+    height: 237px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 28px;
+}
+
+.cards img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    align-items: stretch;
+}
+
+.column-comments {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-comments .label { 
+    margin-top: auto; 
+    opacity: 30%;
+}
+
+/* CALL TO ACCION */
+
+.call-to-action {
+    background-color: #2F1893;
+    background-image: url("./assets/img/call-to-action-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+.btn-2 {
+    background-color: #25DAC5;
+    color: white;
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    text-decoration: none;
+    padding: 17px 35px;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+.call-to-action .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 600px;
+    max-width: 500px;
+}
+
+.btn-play {
+    width: 70px;
+    height: 70px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px
+}
+
+/* LAST WORKS */
+
+.showcase {
+    background-color: #1E0E62;
+}
+
+.showcase .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    max-width: 980px;   /* 470 + 470 + 40 (gap) = 980 */
+    margin: 0 auto;     /* centra el bloque */
+}
+
+.btn-3 {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    text-decoration: none;
+    padding: 13px 24px;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+h4 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+    margin-top: 3px;
+}
+
+.showcase-grid img {
+    margin-bottom: 30px;
+}
+
+.showcase-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.showcase-header h3 {
+    margin: 0;
+}
+
+.showcase-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 70px;
+    column-gap: 30px;
+    margin: 0;
 }
 
